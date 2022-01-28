@@ -66,12 +66,15 @@ class HomePage extends StatelessWidget {
                  children: [
 
                    Container(
+               child: InkWell(
+               onTap: (){},
                      child: Column(
                        mainAxisAlignment: MainAxisAlignment.center,
                children: [
                          Text('1',style: TextStyle(fontSize: 30,color: Colors.deepPurple)),
                ],
                      ),
+               ),
                      width: 75.0,
                      height: 75.0,
                         decoration: BoxDecoration(
@@ -93,11 +96,14 @@ class HomePage extends StatelessWidget {
                    Padding(
                      padding: const EdgeInsets.all(8.0),
                      child: Container(
+                       child: InkWell(
+                         onTap: (){},
                        child: Column(
                          mainAxisAlignment: MainAxisAlignment.center,
                          children: [
                            Text('2',style: TextStyle(fontSize: 30,color: Colors.deepPurple)),
                          ],
+                       ),
                        ),
                        width: 75.0,
                        height: 75.0,
@@ -119,11 +125,14 @@ class HomePage extends StatelessWidget {
                      ),
                    ),
                    Container(
+                     child: InkWell(
+                       onTap: (){},
                      child: Column(
                        mainAxisAlignment: MainAxisAlignment.center,
                        children: [
                          Text('3',style: TextStyle(fontSize: 30,color: Colors.deepPurple)),
                        ],
+                     ),
                      ),
                      width: 75.0,
                      height: 75.0,
@@ -154,12 +163,15 @@ class HomePage extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       Container(
+                  child: InkWell(
+                  onTap: (){},
                         child: Column(
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
                             Text('4',style: TextStyle(fontSize: 30,color: Colors.deepPurple)),
                           ],
                         ),
+                  ),
                         width: 75.0,
                         height: 75.0,
                         decoration: BoxDecoration(
@@ -180,11 +192,14 @@ class HomePage extends StatelessWidget {
                       Padding(
                         padding: const EdgeInsets.all(8.0),
                         child: Container(
+                          child: InkWell(
+                            onTap: (){},
                           child: Column(
                             mainAxisAlignment: MainAxisAlignment.center,
                             children: [
                               Text('5',style: TextStyle(fontSize: 30,color: Colors.deepPurple)),
                             ],
+                          ),
                           ),
                           width: 75.0,
                           height: 75.0,
@@ -205,11 +220,14 @@ class HomePage extends StatelessWidget {
                         ),
                       ),
                       Container(
+                        child: InkWell(
+                          onTap: (){},
                         child: Column(
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
                             Text('6',style: TextStyle(fontSize: 30,color: Colors.deepPurple)),
                           ],
+                        ),
                         ),
                         width: 75.0,
                         height: 75.0,
@@ -240,12 +258,15 @@ class HomePage extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       Container(
+                  child: InkWell(
+                  onTap: (){},
                         child: Column(
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
                             Text('7',style: TextStyle(fontSize: 30,color: Colors.deepPurple)),
                           ],
                         ),
+                  ),
                         width: 75.0,
                         height: 75.0,
                         decoration: BoxDecoration(
@@ -266,12 +287,15 @@ class HomePage extends StatelessWidget {
                       Padding(
                         padding: const EdgeInsets.all(8.0),
                         child: Container(
+                          child: InkWell(
+                            onTap: (){},
                           child: Column(
                             mainAxisAlignment: MainAxisAlignment.center,
                             children: [
                               Text('8',style: TextStyle(fontSize: 30,color: Colors.deepPurple)),
+
                             ],
-                          ),
+                          ),),
                           width: 75.0,
                           height: 75.0,
                           decoration: BoxDecoration(
@@ -291,12 +315,16 @@ class HomePage extends StatelessWidget {
                         ),
                       ),
                       Container(
+                        child: InkWell(
+                          onTap: (){},
                         child: Column(
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
+
                             Text('9',style: TextStyle(fontSize: 30,color: Colors.deepPurple)),
                           ],
                         ),
+                      ),
                         width: 75.0,
                         height: 75.0,
                         decoration: BoxDecoration(
@@ -328,12 +356,15 @@ class HomePage extends StatelessWidget {
                   Container(width: 75.0,
                     height: 75.0,),
                   Container(
+                    child: InkWell(
+                      onTap: (){},
                   child: Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       Text('0',style: TextStyle(fontSize: 30,color: Colors.deepPurple)),
                     ],
                   ),
+                    ),
                     width: 75.0,
                     height: 75.0,
                     decoration: BoxDecoration(
@@ -355,12 +386,15 @@ class HomePage extends StatelessWidget {
                       Container(
                         width: 75.0,
                         height: 75.0,
+                        child: InkWell(
+                          onTap: (){},
                         child: Icon(
                           Icons.backspace_outlined,         // รูปไอคอน
                           size: 30.0,           // ขนาดไอคอน
                           color: Colors.deepPurpleAccent,
                           // สีไอคอน
                         ),
+                      ),
                       ),
                   ],
 
@@ -398,4 +432,14 @@ class HomePage extends StatelessWidget {
         ),
     );
   }
+  /*Widget buildButton({int? num}) {
+    return Padding(
+      padding: const EdgeInsets.all(8.0),
+    child: InkWell(
+    onTap: (){},
+
+    ),
+    );
+  }*/
 }
+
